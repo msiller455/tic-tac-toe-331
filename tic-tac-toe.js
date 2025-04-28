@@ -1,3 +1,1 @@
-console.log("Hello world!")
-
-const name = "Michael"
+console.log("Tic Tac Toe")
