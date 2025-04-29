@@ -1,3 +1,30 @@
-This document is for planning out a game of Tic Tac Toe
+Tic Tac Toe planning
 
-We are going to write pseudocode here
+1. Draw the lines
+  1. console log the board
+  2. use an array with nine elements to represent the board
+    1. Can be 1 dimensional or 2 dimensional
+  3. our array will have nine null values to start (if 1 dimensional)
+2. Choose X's or O's
+  1. Player 1 will be X and Player 2 will be O
+3. X's go first
+  1. use a "turn" variable to store whose turn it is ("X" or "O")
+4. X chooses a spot
+  1. replace null value with the turn variable
+5. Change the turn
+  1. update turn variable to be opposite of what it currently is
+6. O chooses a spot
+  1. Make sure spot is available
+    - If the spot has a null value, it is available
+  2. replace null value with the turn variable
+7. Repeat until the game ends
+  1. while loop
+8. Check if someone gets three in a row, they are the winner
+  1. This should take place at the end of each turn
+  2. we will index numbers of hte positions we are checking (1 dimensional) or row or col numbers (2 dimensional)
+  3. if statement used to introduce brnaching
+9. It's a tie if there are no more playable spots and no winner
+  1. This should take place at the end of each turn
+  2. No more mull values and none of the checks from Step 8 were true
+10. Repeat the whole process to play again
+  1. ??
