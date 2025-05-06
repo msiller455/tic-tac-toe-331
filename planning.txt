@@ -9,9 +9,6 @@ Tic Tac Toe planning
   1. Player 1 will be X and Player 2 will be O
 3. X's go first
   1. use a "turn" variable to store whose turn it is ("X" or "O")
-
-DONE
-
 4. X chooses a spot
   1. use prompt to receive user input
     - Have the user choose a number from 0 to 8. We will use this as an idx number
@@ -31,9 +28,19 @@ DONE
   3. render the board
 7. Repeat until the game ends
   1. while loop
+
+DONE
+
 8. Check if someone gets three in a row, they are the winner
   1. This should take place at the end of each turn
   2. we will index numbers of hte positions we are checking (1 dimensional) or row or col numbers (2 dimensional)
+    1. We need to iterate over the WINNING_COMBOS array
+    2. we need ot use the idx numbers in the nested WINNING_COMBOS arrays to check our board array elements
+    3. if the elements at those idx numbers all match, we have a winner.
+    4. if we have a winner, we can end iteration
+    5. if we make it through all combos and there is no winner
+      1. If there are empty spots on the board, the game is ongoing (winner is null)
+      2. If there are no more available spots, the game is a tie (winner is 'T')
   3. if statement used to introduce brnaching
   4. Render the board
 9. It's a tie if there are no more playable spots and no winner
@@ -52,7 +59,7 @@ The Controller represents the logic that will update the Model. The Controller u
 The general flow of the code will write is this:
 - Initilization (setting up the game)
 - Gameplay Loop
-  - In response to some kind of user interaction, our code will update all relevant pieces of state, and lastly will render the new updated state to the screen
+  - ****** In response to some kind of user interaction, our code will update all relevant pieces of state, and lastly will render the new updated state to the screen ******
 
 Models: What state will we need?
 - board variable that stores an array
