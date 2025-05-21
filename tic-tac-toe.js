@@ -84,7 +84,8 @@ function changeTurn(currentTurn) {
   }
 }
 
-const changeTurn = currentTurn => currentTurn === 'X' ? 'O' : 'X'
+// Arrow Function Example
+// const changeTurn = currentTurn => currentTurn === 'X' ? 'O' : 'X'
 
 function checkWinner() {
   for (let combo of WINNING_COMBOS) {

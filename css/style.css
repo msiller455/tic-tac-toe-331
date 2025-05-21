@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.board {
+  background-color: dodgerblue;
+  height: 650px;
+  width: 650px;
+  margin-bottom: 2.5rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.cell {
+  color: dodgerblue;
+  font-size: 5rem;
+  background-color: white;
+}
+
+.message {
+  font-size: 2rem;
+}
+
+/* Utility Classes */
+
+.ctr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

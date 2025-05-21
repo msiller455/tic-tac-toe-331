@@ -1,51 +1,50 @@
 Tic Tac Toe planning
 
 1. Draw the lines
-  1. use an array with nine elements to represent the board // model
+  0. Build out a UI with HTML and CSS that represents our board
+  1. Cache DOM elements for later use (selecting elements)
+  2. use an array with nine elements to represent the board // model
     1. Can be 1 dimensional or 2 dimensional
     2. our array will have nine null values to start (if 1 dimensional)
-  2. render the board
+  3. render changes
 2. Choose X's or O's
   1. Player 1 will be X and Player 2 will be O
 3. X's go first
   1. use a "turn" variable to store whose turn it is ("X" or "O")
 4. X chooses a spot
-  1. use prompt to receive user input
-    - Have the user choose a number from 0 to 8. We will use this as an idx number
+  1. listen for user click on board
     - We will need to check if the selection is valid
       - What is a valid choice?
-        - Must be a number
-        - Between 0 and 8
         - See if space is available on board
-  2. If selection is valid, replace null value with the turn variable
+  2. If selection is valid, replace null value with the turn variable in our state
 5. Change the turn
   1. update turn variable to be opposite of what it currently is
-  2. render the board
+  2. render changes
 6. O chooses a spot
   1. Make sure spot is available
     - If the spot has a null value, it is available
   2. replace null value with the turn variable
-  3. render the board
+  3. render changes
 7. Repeat until the game ends
   1. while loop
 8. Check if someone gets three in a row, they are the winner
   1. This should take place at the end of each turn
-  2. we will index numbers of hte positions we are checking (1 dimensional) or row or col numbers (2 dimensional)
+  2. we will index numbers of the positions we are checking (1 dimensional) or row or col numbers (2 dimensional)
     1. We need to iterate over the WINNING_COMBOS array
-    2. we need ot use the idx numbers in the nested WINNING_COMBOS arrays to check our board array elements
+    2. we need to use the idx numbers in the nested WINNING_COMBOS arrays to check our board array elements
     3. if the elements at those idx numbers all match, we have a winner.
     4. if we have a winner, we can end iteration
     5. if we make it through all combos and there is no winner
       1. If there are empty spots on the board, the game is ongoing (winner is null)
       2. If there are no more available spots, the game is a tie (winner is 'T')
   3. if statement used to introduce brnaching
-  4. Render the board
+  4. Render changes
 9. It's a tie if there are no more playable spots and no winner
   1. This should take place at the end of each turn
   2. No more mull values and none of the checks from Step 8 were true
-  3. Render the board
+  3. Render changes
 10. Repeat the whole process to play again
-  1. ??
+  1. click play again button
 
 Design Pattern: MVC - Model View Controller
 
