@@ -15,6 +15,7 @@ Tic Tac Toe planning
   1. listen for user click on board
     - We will need to check if the selection is valid
       - What is a valid choice?
+        - a div with a class of cell
         - See if space is available on board
   2. If selection is valid, replace null value with the turn variable in our state
 5. Change the turn

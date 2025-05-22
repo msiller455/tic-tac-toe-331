@@ -34,6 +34,14 @@ h1 {
 
 .message {
   font-size: 2rem;
+  margin-bottom: 2rem;
+  ;
+}
+
+.reset-btn {
+  width: 200px;
+  height: 80px;
+  /* visibility: hidden; */
 }
 
 /* Utility Classes */
